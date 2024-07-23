@@ -2,39 +2,71 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Formulário para entrar em contato com Gabriel do Câmara.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Contato: Gabriel do Câmara</title>
 </head>
 <body>
     <header>
-        <h2>Formulário para contato com Gabriel do Câmara </h2>
+        <h1>Entre em contato com Gabriel do Câmara</h1>
     </header>
+
     <main>
-        <form>
-            <p><strong>Siga as instruções:</strong></p>
+        <section>
+            <h2>Preencha os campos abaixo:</h2>
 
-            <label for="name">Nome: </label>
-            <input type="text" name="name"><br>
+            <form>
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" placeholder="Ex.: Maria" required><br><br>
 
-            <label for="email">Email: </label>
-            <input type="email" name="email"><br>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Ex.: maria@gmail.com" required><br><br>
 
-            <label for="numero">Telefone: </label>
-            <input type="number" name="numero"><br><br>
+                <label for="numero">Telefone</label>
+                <input type="tel" id="numero" name="numero" placeholder="Ex.: (22) 98858-7711" required><br><br>
 
-            <label for="areadetexto">Deixe sua mensagem:</label><br>
-            <textarea rows="4" cols="35"></textarea><br>
-            <button type="submit" id="botao"><audio src="assets/click-151673.mp3" autoplay></audio>Enviar Mensagem</button>
-        </form>
-        <img src="assets/6416396.gif" width="100px">
+                <label for="areadetexto">Deixe sua mensagem:</label><br>
+                <textarea id="areadetexto" name="areadetexto" placeholder="Insira sua mensagem." rows="4" cols="35" required></textarea><br><br>
+
+                <button type="submit" id="botao">Enviar Mensagem</button>
+            </form>
+        </section>
+
+        <section>
+            <img src="assets/6416396.gif" width="100px">
+        </section>
+
+        <section>
+            <h2>Música de fundo para você relaxar:</h2>
+            <audio controls>
+                <source src="assets/lofi.mp3" type="audio/mpeg">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+        </section>
+
+        <section>
+            <h2>Conheça o nosso querido Instituto de Computação:</h2>
+            <video width="640" height="360" controls>
+                <source src="assets/ic.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </section>
     </main>
+
+    <hr>
+
     <footer>
-        <h4>Redes Sociais:</h4>
-        <a href="https://github.com/gabriel-camara-dev"><img  src="assets/github.png" width="35px"></a>
-        <a href="https://www.instagram.com/gabriel__camara_"><img  src="assets/instagram.png" width="35px"></a>
-        <a href="https://www.linkedin.com/in/gabriel-c%C3%A2mara-b6883b2a1/"><img  src="assets/linkedin.png" width="35px"></a><br>
-        <a href="pagina_individual-gabriel.html">Página individual - Gabriel do Câmara</a><br>
-        <a href="pagina_principal.html">Página Inicial</a>
+        <section>
+            <h2>Redes Sociais:</h2>
+            <a href="https://github.com/gabriel-camara-dev"><img src="assets/github.png" alt="Logo GitHub" width="35px"></a>
+            <a href="https://www.instagram.com/gabriel__camara_"><img src="assets/instagram.png" alt="Logo Instagram" width="35px"></a>
+            <a href="https://www.linkedin.com/in/gabriel-c%C3%A2mara-b6883b2a1/"><img src="assets/linkedin.png" alt="Logo Linkedin" width="35px"></a><br>
+        </section>
+
+        <section>
+            <a href="pagina_individual-gabriel.html">Página de Gabriel do Câmara</a> |
+            <a href="index.html">Página Inicial</a>
+        </section>
     </footer>
 </body>
 </html>
